@@ -30,7 +30,7 @@ SECRET_KEY = '%9wfn5z6!_o602)v@!)j26k-a_w327of@4u0p1d&+9%)^zha5x'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://hz-todo-list.herokuapp.com/']
+ALLOWED_HOSTS = ['hz-todo-list.herokuapp.com']
 
 
 # Application definition
