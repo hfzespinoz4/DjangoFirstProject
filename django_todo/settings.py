@@ -11,8 +11,10 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
 from pathlib import Path
+import os
 import dj_database_url
 
+development = os.environ.get('DEVELOPMENT', False)
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -86,7 +88,6 @@ WSGI_APPLICATION = 'django_todo.wsgi.application'
 
 DATABASES = {
     'default':dj_database_url.parse('postgres://sjlfkgutabujat:e7c716b2928d138460e10e3d9eb21a60b8f0e89790db50b07791595c676696f2@ec2-54-75-248-49.eu-west-1.compute.amazonaws.com:5432/dda6uuk7dub4ho')
-
 }
 
 # Password validation
